@@ -1,0 +1,44 @@
+body {
+  color: #FCE938;
+  background-color: rgba(0, 0, 0, .6) !important;
+  background-image: url(../img/stars.jpg);
+  background-blend-mode: color;
+
+}
+
+#logo {
+  max-width: 300px;
+}
+
+label input {
+  visibility: hidden;
+  position: absolute;
+}
+
+img.answer-selector {
+  width: 24px;
+}
+
+label input + img {
+  visibility: hidden;
+}
+
+label input:checked + img {
+  visibility: visible;
+}
+
+/* MODAL */
+
+div.modal-dialog {
+  color: #000000;
+}
+
+div.modal-body img {
+  width: 49%;
+}
+
+div.modal-body p{
+  font-size: 30px;
+  font-weight: 600;
+  width: 49%;
+}

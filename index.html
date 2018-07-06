@@ -15,10 +15,72 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		
+		<div class="text-center py-3">
+			<div class="text-center">
+				<img id="logo" src="img/logo.png" alt="Star Wars">
+			</div>
 
+			<div class="question text-left">
+				<h5>What color is Darth Vader?</h5>
+				<div class="radio">
+			  <label onclick="soundEffect()"><input type="radio" name="group1"><img class="answer-selector" src="img/lightsaber.png">Red</label>
+				</div>
+				<div class="radio">
+				  <label onclick="soundEffect()"><input type="radio" name="group1"><img class="answer-selector" src="img/lightsaber.png">Blue</label>
+				</div>
+				<div class="radio">
+				  <label onclick="soundEffect()"><input type="radio" name="group1" value="correct"><img class="answer-selector" src="img/lightsaber.png">Black</label>
+				</div>
+				<div class="radio">
+				  <label onclick="soundEffect()"><input type="radio" name="group1"><img class="answer-selector" src="img/lightsaber.png">White</label>
+				</div>
+			</div>
 
+			<div class="question text-left">
+				<h5>What color is a Stormtrooper?</h5>
+				<div class="radio">
+			  <label onclick="soundEffect()"><input type="radio" name="group2"><img class="answer-selector" src="img/lightsaber.png">Red</label>
+				</div>
+				<div class="radio">
+				  <label onclick="soundEffect()"><input type="radio" name="group2"><img class="answer-selector" src="img/lightsaber.png">Blue</label>
+				</div>
+				<div class="radio">
+				  <label onclick="soundEffect()"><input type="radio" name="group2"><img class="answer-selector" src="img/lightsaber.png">Black</label>
+				</div>
+				<div class="radio">
+				  <label onclick="soundEffect()"><input type="radio" name="group2"><img class="answer-selector" src="img/lightsaber.png" value="correct">White</label>
+				</div>
+			</div>
 
+			<div class="text-center">
+				<button onclick="submit()" type="button" name="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalCenter">Submit</button>
+			</div>
+		</div>
+
+		<!-- SCORING MODAL -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Great Score!</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+						<img src="img/r2d2.png" alt="R2-D2">
+						<p>Your score: 9/10</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-primary">Save changes</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- AUDIO -->
+		<audio id="audio1" src="audio/light-saber-on.mp3"></audio>
 
 		<!-- JQUERY SCRIPT -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
