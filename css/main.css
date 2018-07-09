@@ -1,6 +1,6 @@
 body {
   color: #FCE938;
-  background-color: rgba(0, 0, 0, .6) !important;
+  background-color: rgba(0, 0, 0, .3) !important;
   background-image: url(../img/stars.jpg);
   background-blend-mode: color;
 
@@ -34,11 +34,11 @@ div.modal-dialog {
 }
 
 div.modal-body img {
-  width: 49%;
+  width: 50%;
 }
 
 div.modal-body p{
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
-  width: 49%;
+  display: inline;
 }
