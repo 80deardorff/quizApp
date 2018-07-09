@@ -3,7 +3,12 @@ body {
   background-color: rgba(0, 0, 0, .3) !important;
   background-image: url(../img/stars.jpg);
   background-blend-mode: color;
+  font-family: 'Bitter', serif;
+}
 
+h5 {
+  font-size: 24px;
+  text-decoration: underline;
 }
 
 #logo {
@@ -25,6 +30,17 @@ label input + img {
 
 label input:checked + img {
   visibility: visible;
+}
+
+label {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+label:hover {
+  border: 1px solid #FCE938;
 }
 
 /* MODAL */

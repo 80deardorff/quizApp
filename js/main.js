@@ -4,7 +4,7 @@ function submit() {
   // VARIABLE FOR NUMBER OF CORRECT ANSWERS
   let numCorrect = 0;
   // CHECKS ANSWERS FOR CORRECT VALUES AND ADDS 1 TO THE NUMBER CORRECT FOR EACH CORRECT ANSWER
-  for (let i = 1; i <= 2; i++) {
+  for (let i = 1; i <= 10; i++) {
     let answer = document.getElementsByName('group' + i);
     for (let j = 0; j < answer.length; j++) {
       if (answer[j].value == 'correct' && answer[j].checked) {
@@ -19,7 +19,7 @@ function submit() {
   let message = document.getElementById('exampleModalLongTitle')
   score.innerText = 'Your score : ' + numCorrect + '/10';
   if (numCorrect == 10) {
-    message.innerText = 'Perfect!';
+    message.innerText = 'Perfect! You are a true Jedi!';
   } else if (numCorrect > 5) {
     message.innerText = 'The force is strong with you.';
   } else {
